@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScheduleApp.MainPage"
+             Shell.NavBarIsVisible="False"
+             Title="Display Class Schedule">
+
+    <Grid ColumnDefinitions="300,*" ColumnSpacing="24" Padding="24">
+
+        <ScrollView Grid.Column="0">
+            <VerticalStackLayout Spacing="6">
+                <Label Text="Display Class Schedule" FontSize="20" FontAttributes="Bold" />
+
+                <Button Text="Open XML file" Clicked="BtnClickOpenFile" />
+
+                <Label Text="Room" FontAttributes="Bold" Margin="0,6,0,0" />
+                <Picker x:Name="RoomPicker" Title="Open a file first" SelectedIndexChanged="OnRoomChanged" />
+
+                <Label Text="Day of week" FontAttributes="Bold" />
+                <Picker x:Name="DayPicker" Title="Open a file first" SelectedIndexChanged="OnDayChanged" />
+
+                <Label Text="Teacher" FontAttributes="Bold" />
+                <Picker x:Name="TeacherPicker" Title="Open a file first" SelectedIndexChanged="OnTeacherChanged" />
+
+                <Label Text="Group" FontAttributes="Bold" />
+                <Picker x:Name="GroupPicker" Title="Open a file first" SelectedIndexChanged="OnGroupChanged" />
+
+                <Label Text="Subject" FontAttributes="Bold" />
+                <Picker x:Name="SubjectPicker" Title="Open a file first" SelectedIndexChanged="OnSubjectChanged" />
+
+                <Label Text="Analysis method" FontAttributes="Bold" Margin="0,6,0,0" />
+                <RadioButton x:Name="SaxRadio" Content="SAX API" GroupName="Strategy" CheckedChanged="OnStrategyChanged" />
+                <RadioButton x:Name="DomRadio" Content="DOM API" GroupName="Strategy" CheckedChanged="OnStrategyChanged" />
+                <RadioButton x:Name="LinqRadio" Content="LINQ to XML" GroupName="Strategy" CheckedChanged="OnStrategyChanged" />
+
+                <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto" ColumnSpacing="8" RowSpacing="8" Margin="0,6,0,0">
+                    <Button Grid.Row="0" Grid.Column="0" Text="Search" Clicked="BtnClickSearch" />
+                    <Button Grid.Row="0" Grid.Column="1" Text="To HTML" Clicked="BtnClickTransform" />
+                    <Button Grid.Row="1" Grid.Column="0" Text="Clear" Clicked="BtnClickClear" />
+                    <Button Grid.Row="1" Grid.Column="1" Text="Exit" Clicked="BtnClickExit" />
+                </Grid>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <Grid Grid.Column="1" RowDefinitions="Auto,*" RowSpacing="10">
+            <Label x:Name="MessageLabel" Grid.Row="0" FontAttributes="Bold" />
+            <Border Grid.Row="1" Padding="10" Stroke="Gray" StrokeThickness="1">
+                <CollectionView x:Name="ResultsView">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="x:String">
+                            <Label Text="{Binding .}" Padding="0,4" />
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Border>
+        </Grid>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Schedule faculty="Faculty of Computer Science and Cybernetics" semester="Autumn 2026">
+  <Room number="303" building="1" type="DISPLAY_CLASS" department="Department of Software Systems" workplacesCount="15">
+    <Session day="Monday" time="08:40" subject="Object-Oriented Programming" teacher="Vasylenko O.M." group="K-11" />
+    <Session day="Monday" time="10:35" subject="Databases" teacher="Kostenko I.P." group="K-12" />
+    <Session day="Monday" time="14:05" responsible="Ivanov D.O." />
+    <Session day="Tuesday" time="08:40" subject="Computer Networks" teacher="Bilous N.V." group="K-13" />
+    <Session day="Tuesday" time="10:35" subject="Object-Oriented Programming" teacher="Vasylenko O.M." group="K-14" />
+    <Session day="Wednesday" time="10:35" subject="Web Programming" teacher="Petrenko S.A." group="K-15" />
+    <Session day="Wednesday" time="12:20" responsible="Ivanov D.O." />
+    <Session day="Thursday" time="08:40" subject="Object-Oriented Programming" teacher="Petrenko S.A." group="K-16" />
+    <Session day="Thursday" time="12:20" subject="Databases" teacher="Bilous N.V." group="K-11" />
+    <Session day="Friday" time="10:35" subject="Object-Oriented Programming" teacher="Vasylenko O.M." group="K-12" />
+    <Session day="Saturday" time="08:40" subject="Computer Networks" teacher="Bilous N.V." group="K-14" />
+    <Session day="Saturday" time="10:35" responsible="Ivanov D.O." />
+  </Room>
+  <Room number="305" building="1" type="DISPLAY_CLASS" department="Department of Information Systems" workplacesCount="12">
+    <Session day="Monday" time="08:40" subject="Web Programming" teacher="Petrenko S.A." group="K-13" />
+    <Session day="Monday" time="12:20" subject="Computer Networks" teacher="Bilous N.V." group="K-11" />
+    <Session day="Tuesday" time="08:40" subject="Databases" teacher="Kostenko I.P." group="K-15" />
+    <Session day="Tuesday" time="12:20" responsible="Bondar T.I." />
+    <Session day="Wednesday" time="08:40" subject="Object-Oriented Programming" teacher="Vasylenko O.M." group="K-16" />
+    <Session day="Wednesday" time="10:35" subject="Databases" teacher="Kostenko I.P." group="K-14" />
+    <Session day="Thursday" time="10:35" subject="Web Programming" teacher="Petrenko S.A." group="K-12" />
+    <Session day="Friday" time="08:40" subject="Computer Networks" teacher="Bilous N.V." group="K-15" />
+    <Session day="Friday" time="14:05" responsible="Bondar T.I." />
+    <Session day="Saturday" time="10:35" subject="Databases" teacher="Kostenko I.P." group="K-16" />
+  </Room>
+  <Room number="214" building="2" type="DEPARTMENT_ARM" department="Department of Software Systems" workplacesCount="3">
+    <Session day="Monday" time="10:35" workplace="ARM-1" user="Vasylenko O.M." />
+    <Session day="Monday" time="14:05" workplace="ARM-2" user="Bondar T.I." />
+    <Session day="Tuesday" time="12:20" workplace="ARM-3" user="Kostenko I.P." />
+    <Session day="Wednesday" time="08:40" workplace="ARM-1" user="Petrenko S.A." />
+    <Session day="Wednesday" time="14:05" responsible="Ivanov D.O." />
+    <Session day="Thursday" time="10:35" workplace="ARM-2" user="Bilous N.V." />
+    <Session day="Friday" time="12:20" workplace="ARM-1" user="Ivanov D.O." />
+  </Room>
+  <Room number="118" building="2" type="DEPARTMENT_ARM" department="Department of Information Systems" workplacesCount="2">
+    <Session day="Monday" time="12:20" workplace="ARM-1" user="Kostenko I.P." />
+    <Session day="Tuesday" time="10:35" workplace="ARM-2" user="Bondar T.I." />
+    <Session day="Wednesday" time="12:20" workplace="ARM-1" user="Bilous N.V." />
+    <Session day="Thursday" time="14:05" workplace="ARM-2" user="Vasylenko O.M." />
+    <Session day="Friday" time="10:35" workplace="ARM-1" user="Petrenko S.A." />
+    <Session day="Friday" time="14:05" responsible="Ivanov D.O." />
+    <Session day="Saturday" time="12:20" workplace="ARM-2" user="Kostenko I.P." />
+  </Room>
+</Schedule>
